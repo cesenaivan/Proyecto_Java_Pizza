@@ -1,0 +1,373 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  font-size: 23px;
+}
+
+
+.logotipotexto {
+  font-family: "Instagram";
+  font-size: 40px;
+}
+
+body {
+  background-color: rgb(15, 14, 15);
+
+  /* ajustar el tamaño de la navbar al hacerla fija */
+}
+
+/* El Navbarbrand */
+.navbar-brand {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #fff;
+}
+
+.navbar-scroll {
+  box-shadow: none;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 20px 0 rgba(47, 46, 46, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #4f4f4f;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+#nombrepostres {
+  text-align: center;
+  background-color: lightgray;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.listadopostres {
+  color: black;
+  font-size: 40px;
+}
+
+.listadopostrescursiva {
+  color: black;
+  font-size: 30px;
+text-decoration:underline;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 9px dotted orange;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.cajaroja {
+  background-color: #232423;
+  border-radius: 40px;
+}
+
+.imagenpostres {
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.blancocenter {
+  color: white;
+  text-align: center;
+}
+
+#cafes {
+  text-align: center;
+  background-color: lightgray;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.card {
+  margin: 15px !important;
+  background-color: #0e0f0e;
+  width: 400px !important;
+  color: white;
+  border-radius: 30px;
+  /* Tranforma la carta con animacion en 0.3 segundos */
+  transition: transform 0.3s ease-in-out;
+  padding: 0px !important;
+}
+
+.card:hover {
+  /* El 1.1 es un 10% del tamaño que augmenta */
+  transform: scale(1.1);
+
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+}
+
+.ovalado {
+  border-radius: 30%;
+  opacity: 0, 4;
+}
+
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff;
+  border-radius: 9px;
+}
+
+ul li {
+  margin: 10px;
+}
+
+.card-img-top {
+  height: 400px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+#demo {
+  width: 100%; /* ajustar el carrusel al ancho completo */
+}
+
+.nav-fixed {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+#derecha {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#numero {
+  text-align: center;
+  border-radius: 50px;
+  background: orange;
+}
+
+#incremento {
+  margin-bottom: 10px;
+}
+
+/* Clases de boton añadir pizzas */
+.botoncafes,
+.botonpostres,
+.añadirpizzas,
+.btnpostres {
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc9f52;
+}
+.botoncafes:hover,
+.botonpostres:hover,
+.añadirpizzas:hover,
+.btnpostres:hover {
+  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color: #fb9e25;
+}
+.botoncafes:active,
+.botonpostres:active,
+.añadirpizzas:active,
+.btnpostres:active {
+  position: relative;
+  top: 1px;
+}
+
+#footer1 {
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 50%);
+  animation: alternate;
+  border: solid 10px;
+  border-radius: 6;
+  border-color: #0e0f0e;
+  font-size: 25px;
+}
+
+.formatofooter {
+  font-size: 25px;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+.container-fluid {
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 80%);
+}
+
+#prueba {
+  background-color: #0e0f0e;
+}
+
+#cocinero1 {
+  width: 100px;
+}
+
+#cocinero2 {
+  width: 100px;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: purple;
+}
+
+#mesas {
+  border-radius: 20px;
+}
+
+.blanco {
+  color: white;
+}
+
+#icon1 {
+  width: 300px !important;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#icon2 {
+  width: 300px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+#icon3 {
+  width: 300px;
+  float: right !important;
+  margin-top: 50px;
+  margin-right: 60px;
+}
+
+/* ================================================================= /*
+/* =                    MEDIA QUERYS                               = /*
+/* ================================================================= */
+@media (max-width: 991px) {
+  .navbar-nav {
+    display:none;
+  }
+
+  .navbar-nav.mostrar {
+    display:block;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  #carta {
+    max-width: 100%;
+  }
+  
+  /* Ocultamos el icono de publicidad */
+  #icon3 {
+    display:none;
+  }
+  /* Flexbox para mostrar las cartas en una sola columna */
+  #carta > .card {
+    display: flex;
+    flex-direction: column;
+
+  }
+  #derecha {
+    position: fixed;
+    margin-top:300px;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #carta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #icon3 {
+    display:none;
+  }
+  #divicon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #icon1 {
+    
+    order: 1;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left:80px;
+  }
+  
+
+  
+  #icon3 {
+    order: 3;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 797px) {
+  #divicon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #icon2 {
+    order: 1;
+  }
+  #icon1 {
+    order: 2;
+  }
+  #icon3 {
+    order: 3;
+  }
+  #derecha {
+    position: fixed;
+    margin-top:300px;
+
+  }
+}
+
+
