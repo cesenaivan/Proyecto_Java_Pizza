@@ -27,5 +27,10 @@ public class Usuario {
     @Getter
     @Setter
     private String email;
-
+    @Getter
+    @Setter
+    private String pass1;
+    @Getter
+    @Setter
+    private String direccion;
 }
