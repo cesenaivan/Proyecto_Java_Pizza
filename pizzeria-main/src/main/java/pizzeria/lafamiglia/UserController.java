@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,11 +31,12 @@ public List<Usuario> getApp(){
 public Usuario cru(@RequestBody Usuario nwu){
     return ur.saveAndFlush(nwu);
 }
-/*@DeleteMapping("/api/Usuario/{id}")
+
+@DeleteMapping("/api/Usuario/{id}")
 public void deleteUser(@PathVariable Long id) {
     ur.deleteById(id);
 }
-
+/* 
 @PutMapping("/api/Usuario/{id}")
 public Usuario updateUser(@PathVariable Long id, @RequestBody Usuario updatedUser) {
     Usuario user = ur.findById(id).orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado con id: " + id));
