@@ -3,6 +3,7 @@ package pizzeria.lafamiglia;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    
     // No es necesario agregar la anotación @Repository, ya que JpaRepository
     // ya tiene la anotación @Repository
     // public Usuario save(Usuario usuario);
@@ -11,3 +12,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     // guardado, puedes hacerlo mediante una clase que implemente la interfaz
     // JpaRepository y agregando la anotación @Repository.
 }
+
+/*public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    Optional<Usuario> findById(String email);
+}*/
