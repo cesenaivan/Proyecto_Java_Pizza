@@ -36,6 +36,25 @@ public Usuario cru(@RequestBody Usuario nwu){
 public void deleteUser(@PathVariable Long id) {
     ur.deleteById(id);
 }
+}
+
+
+
+/*@PutMapping("/api/Usuario/{id}")
+public Usuario updateUser(@PathVariable Long id, @RequestBody Usuario updatedUser) {
+return ur.findById(id)
+ .map(user -> {
+user.setNombre(updatedUser.getNombre());
+user.setApellido(updatedUser.getApellido());
+user.setEmail(updatedUser.getEmail());
+user.setTelefono(updatedUser.getTelefono());
+return ur.save(user);
+})
+.orElse(null);
+*/
+
+
+
 /* 
 @PutMapping("/api/Usuario/{id}")
 public Usuario updateUser(@PathVariable Long id, @RequestBody Usuario updatedUser) {
@@ -59,4 +78,4 @@ public class MiControlador {
   }
 }*/
 
-}
+

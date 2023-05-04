@@ -21,7 +21,7 @@ public class LoginController {
     //List<Usuario> Listausuarioprueba;
 
     @Autowired
-    UsuarioRepository ur1;
+    LoginRepository ur1;
 
     /*public UserController() {
         
@@ -30,12 +30,12 @@ public class LoginController {
 public List<Usuario> getApp(){
     return ur1.findAll();
 }
-/*@PostMapping ("/api/login")
+@PostMapping ("/api/login")
 public Usuario cru(@RequestBody Usuario nwu1){
     return ur1.saveAndFlush(nwu1);
-}*/
+}
 
-@PostMapping("/api/login")
+/*@PostMapping("/api/login")
 public ResponseEntity<?> login(@RequestBody UsuarioLogin usuarioLogin) {
     // Buscamos el usuario con el email proporcionado
     Optional<Usuario> usuarioOptional = ur1.findById(usuarioLogin.getEmail());

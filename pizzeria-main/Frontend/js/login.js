@@ -19,6 +19,7 @@ window.onload = () => {
         if (response.ok) {
           // El inicio de sesión fue exitoso, redirigir al usuario a su perfil
           window.location.href = 'http://127.0.0.1:5500/Frontend/index.html';
+          alert('Inicio de sesión correcto')
         } else {
           // El inicio de sesión falló, mostrar un mensaje de error al usuario
           const error = await response.json();
@@ -30,3 +31,4 @@ window.onload = () => {
       }
     });
   };
+  
